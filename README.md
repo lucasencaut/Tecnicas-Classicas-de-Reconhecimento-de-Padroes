@@ -1,0 +1,1 @@
+# Tecnicas-Classicas-de-Reconhecimento-de-Padroes
