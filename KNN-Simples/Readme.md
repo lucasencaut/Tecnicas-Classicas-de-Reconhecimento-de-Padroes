@@ -1,4 +1,5 @@
-Descrição do KNN
+# Descrição do KNN
+
 O KNN é um algoritmo de aprendizado supervisionado baseado em instâncias. Ele classifica um novo ponto de acordo com a maioria das classes presentes em seus 𝑘 vizinhos mais próximos.
 
 O funcionamento do algoritmo pode ser resumido nos seguintes passos:
