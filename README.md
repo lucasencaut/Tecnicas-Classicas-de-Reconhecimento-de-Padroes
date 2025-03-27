@@ -1,4 +1,4 @@
-# Tecnicas-Classicas-de-Reconhecimento-de-Padroes
+# Técnicas Clássicas de Reconhecimento de Padrões
 
 ## Descrição do Repositório
 
