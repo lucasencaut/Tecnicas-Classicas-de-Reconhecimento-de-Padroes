@@ -23,24 +23,12 @@ O código fornecido neste repositório implementa essa versão do KNN, permitind
 
   ![image](https://github.com/user-attachments/assets/8a3f3db0-7be3-40d8-9760-28513eb1b2f3) (3)
 
-
-
-    \begin{equation}
-        \boldsymbol{\mu} =
-        \begin{bmatrix}
-            \mu_1 \\
-            \mu_2 \\
-            \vdots \\
-            \mu_n
-        \end{bmatrix}
-        \label{eq:dist_marg}
-    \end{equation}
+  ![image](https://github.com/user-attachments/assets/d17e29b4-1358-4265-8983-1244155f4835) (4)
 
     Para facilitar a implementação, considere a seguinte implementação em $R$ da função de densidade Normal multivariada:
 
-    \begin{lstlisting}[language=R]
-        pdfnvar <- function(x, m, K, n) (1 / (sqrt((2 * pi)^n * det(K)))) * exp(-0.5 * (t(x - m) %*% solve(K) %*% (x - m)))
-    \end{lstlisting}
+    ```r
+    pdfnvar <- function(x, m, K, n) (1 / (sqrt((2 * pi)^n * det(K)))) * exp(-0.5 * (t(x - m) %*% solve(K) %*% (x - m)))
 
     em que $\boldsymbol{K} = h\boldsymbol{I}$, sendo assim $h$ o raio da função Gaussiana.
 
