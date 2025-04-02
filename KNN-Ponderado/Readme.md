@@ -29,7 +29,8 @@ O código fornecido neste repositório implementa essa versão do KNN, permitind
 
     ```r
     pdfnvar <- function(x, m, K, n) (1 / (sqrt((2 * pi)^n * det(K)))) * exp(-0.5 * (t(x - m) %*% solve(K) %*% (x - m)))
-
+    ```
+    
     em que $\boldsymbol{K} = h\boldsymbol{I}$, sendo assim $h$ o raio da função Gaussiana.
 
     Nesta etapa o desempenho do classificador será avaliado de acordo com os parâmetros $k$ e $h$.
