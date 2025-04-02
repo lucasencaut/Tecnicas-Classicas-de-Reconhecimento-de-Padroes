@@ -10,12 +10,10 @@ O código fornecido neste repositório implementa essa versão do KNN, permitind
 
 - **Objetivos:** Representação do KNN com ponderação de distâncias e entendimento desta abordagem como uma combinação de funções radiais.
 - **Tarefa:** Estender a implementação anterior incluindo a ponderação de distâncias para a tomada de decisão da classificação. De acordo com esta abordagem a resposta do KNN é representada na forma
-
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
   
-  $$\hat{y} = \text{sinal} \left( \sum_{i=1}^{N} \alpha_i y_i K(x, x_i) \right)$$
+  $$
+  \hat{y} = \text{sinal} \left( \sum_{i=1}^{N} \alpha_i y_i K(x, x_i) \right) \tag{1}
+  $$
   
   em que $\alpha_i = 1 \ \forall x_i \in  V_k$, $\alpha_i = 0 \ \forall x_i \notin  V_k$, $V_k$ é o conjunto dos vizinhos mais próximos e $K(x, x_i)$ é um função de kernel radial na forma de uma função Gaussiana.
 
