@@ -21,9 +21,8 @@ O código fornecido neste repositório implementa essa versão do KNN, permitind
 
   em que $n$ é a dimensão de $x$, $\boldsymbol{\Sigma}$ é a matriz de covariâncias, $|\boldsymbol{\Sigma}|$ o seu determinante e $\boldsymbol{\mu}$ é o vetor de médias das distribuições marginais, conforme apresentado a seguir nas Equações 3 e 4.
 
-  $$\boldsymbol{\Sigma} =\begin{bmatrix}\sigma_1^2 & \rho_{12} \sigma_1 \sigma_2 & \cdots & \rho_{1n} \sigma_1 \sigma_n \\ \rho_{21} \sigma_2 \sigma_1 & \sigma_2^2 & \cdots & \rho_{2n} \sigma_2 \sigma_n \\ \vdots & \vdots & \ddots & \vdots \\ \rho_{n1} \sigma_n \sigma_1 & \rho_{n2} \sigma_n \sigma_2 & \cdots & \sigma_n^2 \end{bmatrix}$$
+  ![image](https://github.com/user-attachments/assets/8a3f3db0-7be3-40d8-9760-28513eb1b2f3) (3)
 
-  ![Matriz](https://latex.codecogs.com/png.latex?\boldsymbol{\Sigma}=\begin{bmatrix}\sigma_1^2 & \rho_{12} \sigma_1 \sigma_2 & \cdots & \rho_{1n} \sigma_1 \sigma_n \\ \rho_{21} \sigma_2 \sigma_1 & \sigma_2^2 & \cdots & \rho_{2n} \sigma_2 \sigma_n \\ \vdots & \vdots & \ddots & \vdots \\ \rho_{n1} \sigma_n \sigma_1 & \rho_{n2} \sigma_n \sigma_2 & \cdots & \sigma_n^2 \end{bmatrix})
 
 
     \begin{equation}
