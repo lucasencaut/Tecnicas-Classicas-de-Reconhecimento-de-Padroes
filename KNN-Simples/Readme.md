@@ -12,3 +12,8 @@ O funcionamento do algoritmo pode ser resumido nos seguintes passos:
 A principal variável que influencia o desempenho do KNN é o valor de 𝑘. Valores muito pequenos podem resultar em sobreajuste (o modelo se torna muito sensível aos dados de treinamento), enquanto valores muito grandes podem levar à perda de detalhes importantes na decisão da classificação.
 
 Este repositório contém a implementação do KNN, permitindo testar diferentes valores de 𝑘 e observar como isso afeta a fronteira de decisão do modelo.
+
+## Atividade
+
+- **Objetivos:** Familiarização com o KNN [CH67] e implementação inicial.
+- **Tarefa:** Dar continuidade à implementação do KNN iniciada em sala de aula e familiarizar com o método observando o desempenho do método em função do parâmetro *k*.
