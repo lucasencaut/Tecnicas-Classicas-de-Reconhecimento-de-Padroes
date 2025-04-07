@@ -6,6 +6,8 @@ Redes neurais artificiais constituem ferramentas amplamente utilizadas para mode
 
 O neurônio Adaline implementa a seguinte função:
 
-$$**y**(**x**) = f(**w_n** **x_n** + **w_{n-1}** **x_{n-1}** + \cdots + **w_1** **x_1** + **w_0**)$$ (1)
+$$
+\mathbf{y}(\mathbf{x}) = f(w_n x_n + w_{n-1} x_{n-1} + \cdots + w_1 x_1 + w_0)
+$$ (1)
 
-em que $x$ é o vetor de entrada, **w_j** são os pesos associados a cada entrada **x_j** e f(.) é a função identidade.
+em que $$\mathbf{x}$$ é o vetor de entrada, $$w_j$$ são os pesos associados a cada entrada $$x_j$$ e $$f(\dot)$$ é a função identidade.
