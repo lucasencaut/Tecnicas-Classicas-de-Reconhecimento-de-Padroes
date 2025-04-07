@@ -20,7 +20,7 @@ Os parâmetros $$w_j$$ são ajustados de forma que $$y_i = w_n x_{ni} + w_{n-1} 
 O sistema representado na equação (0.2) possui $$N$$ equações e $$n$$ incógnitas, podendo também ser representado na forma matricial (0.3):
 
 $$
-Xw = y \tag{0.3}
-$$
+Xw = y 
+$$ \tag{0.3}
 
 em que \( X \), \( w \) e \( y \) são definidos nas equações (0.4), (0.5) e (0.6), respectivamente.
