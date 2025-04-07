@@ -31,11 +31,7 @@ $$w = X^{+} y$$ (0.7)
 
 em que $$X^{+}$$ é a pseudoinversa de $$X$$.
 
-Resolva o problema original do **Boston Housing Data** utilizando o modelo **Adaline**, implementando a **solução direta** descrita anteriormente (via pseudoinversa).
-
-O objetivo é prever o **valor médio de uma casa** na cidade de Boston com base em diversas características socioeconômicas e ambientais.
-
-Este banco de dados pode ser carregado com o pacote `mlbench` do R:
+Resolva o problema original do *Boston Housing Data* utilizando o Adaline implementando a solução direta descrita acima. O problema é prever o valor de casa na cidade de Boston. Este banco de dados pode ser carregado pelo pacote `mlbench` do R. Lembre-sede separar um conjunto de dados para teste.
 
 ```r
 library(mlbench)
