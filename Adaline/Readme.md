@@ -19,9 +19,7 @@ Os parâmetros $$w_j$$ são ajustados de forma que $$y_i = w_n x_{ni} + w_{n-1} 
 
 O sistema representado na equação (0.2) possui $$N$$ equações e $$n$$ incógnitas, podendo também ser representado na forma matricial (0.3):
 
-$$
-Xw = y 
-$$ (0.3)
+$$Xw = y$$ (0.3)
 
 em que $$X$$, $$w$$ e $$y$$ são definidos nas equações (0.4), (0.5) e (0.6), respectivamente.
 
@@ -29,9 +27,7 @@ em que $$X$$, $$w$$ e $$y$$ são definidos nas equações (0.4), (0.5) e (0.6), 
 
 A matriz $$w$$ pode ser obtida por meio da pseudoinversa, conforme Equação (0.7):
 
-$$
-w = X^{+} y \tag{0.7}
-$$
+$$w = X^{+} y$$ (0.7)
 
 em que $$X^{+}$$ é a pseudoinversa de $$X$$.
 
