@@ -6,7 +6,9 @@ Redes neurais artificiais constituem ferramentas amplamente utilizadas para mode
 
 O neurônio Adaline implementa a seguinte função:
 
-$$y(x) = f(w_n x_n + w_{n-1} x_{n-1} + \ldots + w_1 x_1 + w_0)$$ (0.1)
+$$
+y(x) = f(w_n x_n + w_{n-1} x_{n-1} + \ldots + w_1 x_1 + w_0)
+$$ (0.1)
 
 em que $$x$$ é o vetor de entrada, $$w_j$$ são os pesos associados a cada entrada $$x_j$$ e $$f(.)$$ é a função identidade.
 
@@ -21,6 +23,29 @@ O sistema representado na equação (0.2) possui $$N$$ equações e $$n$$ incóg
 
 $$
 Xw = y 
-$$ \tag{0.3}
+$$ (0.3)
 
-em que \( X \), \( w \) e \( y \) são definidos nas equações (0.4), (0.5) e (0.6), respectivamente.
+em que $$X$$, $$w$$ e $$y$$ são definidos nas equações (0.4), (0.5) e (0.6), respectivamente.
+
+![image](https://github.com/user-attachments/assets/6575dbc6-dce6-4b7b-91ca-ce46a8952068)
+
+A matriz $$w$$ pode ser obtida por meio da pseudoinversa, conforme Equação (0.7):
+
+$$
+w = X^{+} y \tag{0.7}
+$$
+
+em que $$X^{+}$$ é a pseudoinversa de $$X$$.
+
+Resolva o problema original do **Boston Housing Data** utilizando o modelo **Adaline**, implementando a **solução direta** descrita anteriormente (via pseudoinversa).
+
+O objetivo é prever o **valor médio de uma casa** na cidade de Boston com base em diversas características socioeconômicas e ambientais.
+
+Este banco de dados pode ser carregado com o pacote `mlbench` do R:
+
+```r
+library(mlbench)
+data(BostonHousing)
+```
+
+Pesquise em sua documentação ou na internet sobre o banco de dados e suas variáveis para entender melhor do que se trata.
