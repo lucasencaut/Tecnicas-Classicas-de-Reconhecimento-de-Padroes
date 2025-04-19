@@ -8,7 +8,7 @@ O objetivo é calcular a probabilidade posterior de cada classe $C_k$ dado um ve
 
 Como $P(x)$ é comum a todas as classes, o classificador escolhe a classe com maior valor de $P(x∣C_k)·P(C_k)$.
 
-- O termo $P(C_k) representa a probabilidade a priori da classe.
+- O termo $P(C_k)$ representa a probabilidade a priori da classe.
 - O termo $P(x∣C_k)$ é a verossimilhança, que pode ser modelada de diferentes formas. Neste projeto, utilizamos distribuições Gaussianas (normais).
 
 Existem duas variantes principais:
