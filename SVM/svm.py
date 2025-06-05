@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Função para gerar espirais
-def gerar_espiral(pontos=300, ruido=0.5):
+def gerar_espiral(pontos, ruido):
     n = pontos // 2
 
     # Primeira espiral
@@ -34,24 +34,36 @@ def gerar_espiral(pontos=300, ruido=0.5):
 
     return X, y
 
-# Gerar com sobreposição intermediária
-#X, y = gerar_espiral(pontos=300, ruido=0.5)
-
 # Dados com baixa sobreposição
-X_baixo, y_baixo = gerar_espiral(pontos=300, ruido=0.2)
+#X, y = gerar_espiral(300, 0.2)
+
+# Gerar com sobreposição intermediária
+#X, y = gerar_espiral(300, 0.5)
 
 # Dados com alta sobreposição
-#X_alto, y_alto = gerar_espiral(pontos=300, ruido=0.7)
+X, y = gerar_espiral(300, 0.7)
 
-# Plotar dados
-plt.figure(figsize=(8,6))
-sns.scatterplot(
-    x=X[:,0],
-    y=X[:,1],
-    hue=pd.Series(y).map({0: 'Classe 0', 1: 'Classe 1'}),
+# Monta DataFrame para evitar problemas de alinhamento
+df = pd.DataFrame({
+    'X1': X[:, 0],
+    'X2': X[:, 1],
+    'Classe': pd.Series(y.astype(int)).map({0: 'Classe 0', 1: 'Classe 1'})
+})
+
+# Scatter plot usando DataFrame
+scatter = sns.scatterplot(
+    data=df,
+    x='X1',
+    y='X2',
+    hue='Classe',
     palette='Set1'
 )
-plt.title("Problema das Espirais")
+
+# Corrigir legenda (remove título)
+handles, labels_leg = scatter.get_legend_handles_labels()
+plt.legend(handles=handles, labels=labels_leg, frameon=True)
+
+#plt.title("Problema das Espirais")
 plt.xlabel('X1')
 plt.ylabel('X2')
 #plt.legend(title='Classe')
@@ -122,7 +134,7 @@ for C_val in valores_C:
     plt.legend(handles=handles, labels=labels_leg, frameon=True)
 
     # Títulos e rótulos
-    plt.title("Problema das Espirais")
+    #plt.title("Problema das Espirais")
     plt.xlabel("X1")
     plt.ylabel("X2")
 
