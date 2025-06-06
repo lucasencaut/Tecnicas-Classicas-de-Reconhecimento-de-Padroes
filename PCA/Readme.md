@@ -24,7 +24,6 @@ Mais especificamente, o aluno deverá:
 ## Observações
 
 - A visualização das projeções auxilia na identificação da estrutura global dos dados e da separação entre classes.
-- Os \_Eigenfaces\_ revelam os padrões de variação entre os rostos da base, como sombras, contornos e formatos predominantes.
 - A matriz dos componentes, ao apresentar os autovalores junto aos pesos dos pixels, permite interpretar o quanto cada componente contribui para a variância total dos dados.
 
 ## Ferramentas
