@@ -9,8 +9,7 @@ Neste exercício, aplicamos o PCA à base **Olivetti Faces**, um conjunto de ima
 O aluno deverá explorar como o PCA pode ser utilizado para:
 
 1. **Projetar as imagens no espaço bidimensional** formado pelas duas componentes principais, visualizando a separabilidade das classes.
-2. **Interpretar os componentes principais** (autovetores) como imagens — os chamados \_Eigenfaces\_, que indicam as regiões de maior variabilidade entre os rostos.
-3. **Construir uma matriz visual dos componentes**, com os autovalores na primeira coluna e os pesos dos pixels nas demais colunas, visualizados em escala de cinza.
+2. **Construir uma matriz visual dos componentes**, com os autovalores na primeira coluna e os pesos dos pixels nas demais colunas, visualizados em escala de cinza.
 
 Mais especificamente, o aluno deverá:
 
